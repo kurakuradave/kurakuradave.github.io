@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Welcome!
+# ChorusText
 
 ChorusText is an assistive device that lets a blind/low-vision person do text-editing, simply by means of touch and hearing alone.
 

@@ -1,5 +1,132 @@
-<h1 id="ta-daa">ta-daa!</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<p>so whill this be served as an index.html file?</p>
+  ga('create', 'UA-105763719-1', 'auto');
+  ga('send', 'pageview');
 
-<h2 id="lets-see">lets see</h2>
+</script>
+.
+    
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>ChorusText | Open Assistive Device</title>
+<meta property="og:title" content="ChorusText" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Open Assistive Device" />
+<meta property="og:description" content="Open Assistive Device" />
+<meta property="og:site_name" content="ChorusText" />
+<script type="application/ld+json">
+{"name":"ChorusText","description":"Open Assistive Device","author":null,"@type":"WebSite","url":"/","publisher":null,"image":null,"headline":"ChorusText","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>ChorusText</h1>
+          <h2>Open Assistive Device</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+          
+	  
+          <a href="" id="view-on-github" class="button"><span>View on GitHub</span></a>
+	  
+        </section>
+        <hr>
+        <section id="main_content">
+          <h1 id="chorustext">ChorusText</h1>
+
+<p>ChorusText is an assistive device that lets a blind/low-vision person do text-editing, simply by means of touch and hearing alone.</p>
+
+<h2 id="why-chorustext">Why ChorusText</h2>
+
+<p>Text-editing is a sight-led activity. To be able to do it well, one must be able to:</p>
+<ol>
+  <li>locate the cursor’s position on the screen</li>
+  <li>read the text around the cursor to gain an understanding of where s/he is in the text</li>
+</ol>
+
+<p>Both of these are done using eyesight, and if one has poor or no eyesight, it can be tough.</p>
+
+<p>This project is trying to find a solution to text-editing that is completely independent of eyesight.
+To achieve this, we’re tapping on the senses of touch and hearing.</p>
+
+<p>To read the text, instead of staring at a monitor, the user drags some sliders and listen to synthesized speech of the text.</p>
+
+<p>When the user types, instead of characters appearing/disappearing on the monitor, the sliders reposition themselves to manifest a physical representation of the text.</p>
+
+<p><a href="https://www.youtube.com/watch?v=rKKQ0PMU3hs">This video shows the device in action:</a></p>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<p>On the surface of the device, there are three physical sliders that the user can reach out to at any time.</p>
+
+<p>Changing the position of the slider would cause the system to pull out the corresponding part of the text and speaks the content out loud, using text-to-speech.</p>
+
+<p>So changing the position of the line slider’s knob from top to bottom will result in the system reading the text progressively line by line.</p>
+
+<p>And changing the position of the word slider knob from left to right will result in the system reading the words in the current line, progressively word by word.</p>
+
+<p>And likewise, changing the position of the character slider knob from left to right will result in the system spelling the letters of the current word, in the current line, progressively letter by letter.</p>
+
+<p>This way, the user can read the text he’s working on with ease, and can drill down to the level of characters effortlessly, which is critical when spell-checking.</p>
+
+<p>Furthermore, as the user types, the sliders continuously reposition themselves to physically manifest the latest state of the text and where the user is in the text.</p>
+
+<p>If he adds two more characters to the current word, the character slider would move two steps to the right.
+If he adds three words to the line, the word slider would move three steps to the right.
+Deleting the current line would make the line slider to move one step up, and so on.</p>
+
+<p>The cursor is no longer an abstract blinking thing, that only lives inside the monitor, where the only way to locate its position is by means of eyesight.</p>
+
+<p>It is now physically manifested by the three sliders.</p>
+
+<p>Simply reach out to the sliders with your hand and listen, the text is immediately accessible and navigable – no eyesight required.</p>
+
+<h2 id="what-its-made-from">What It’s Made From</h2>
+
+<p>ChorusText is built from Arduino, Linux Single-board-computer motorized sliders push-buttons and some basic electronic components</p>
+
+<h3 id="the-repository-is-here"><a href="http://www.github.com/kurakuradave/chorustext">The repository is here</a></h3>
+<p>Contains hardware design files as well as software source codes</p>
+
+<h3 id="chorustext-on-hackadayio"><a href="https://hackaday.io/project/6142-chorustext">ChorusText on Hackaday.io</a></h3>
+<p>Listed as Quarterfinalist in the Hackady Prize 2015 competition</p>
+
+<h2 id="whats-next">What’s Next?</h2>
+
+<p>There’s another open source project called <a href="http://emacspeak.sourceforge.net/">emacSpeak</a>, which has integrated emacs with a text-to-speech system, such that, as the user types, the TTS picks up the text and speaks it out loud.
+Next step for ChorusText is to explore how to integrate it with the emacSpeak software, such that ChorusText becomes the hardware / physical manifestation of the text in the emacs buffer.
+<a href="https://www.gnu.org/software/emacs/">Emacs</a> is a major Linux text-editor software originally developed by Richard M. Stallman.</p>
+
+
+        </section>
+
+        <footer>
+        
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+      </div>
+    </div>
+
+    
+  </body>
+</html>
