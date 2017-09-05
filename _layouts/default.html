@@ -12,10 +12,16 @@
     {% if jekyll.environment == 'production' %}
     {% include analytics.html %}.
     {% endif %}
+    {% if jekyll.environment == 'production' %}
+    {% include tagmanagerhead.html %}.
+    {% endif %}
 {% seo %}
   </head>
 
   <body>
+    {% if jekyll.environment == 'production' %}
+    {% include tagmanagerbody.html %}.
+    {% endif %}
     <div id="container">
       <div class="inner">
 

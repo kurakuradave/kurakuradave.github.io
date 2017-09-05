@@ -1,0 +1,19 @@
+Notes on setting up GitHub Pages
+================================
+with Jekyll and Google Analytics tracking
+-----------------------------------------
+
+Jekyll build will convert .md files into .html files, located in /_site/ directory
+Jekyll themes are actually Jekyll sites, check contents and directory structure of the themes, use gem command to check the location those jekyll themes are installed into
+gem is like npm in node, we install uninstall and manage packages with gem
+ruby and gem should come preinstalled on Ubuntu
+initially when setting up bundler and jekyll, need to ensure ffi has already been properly installed. May need to google on how to install ffi since this doesn't work right out of the box.
+_layout should contain templates for layout, as html file
+_includes shoudl contain html partials/snippets to be included in all pages built by Jekyll
+_config.yml contains the configuration for the Jekyll site. This is a core file!!
+default building environment for Jekyll is development, if wanna build for production, prefix the build command with a special string, see <[1]> 
+on how to add GA tracking to Jekyll sites, see <[1]> JEKYLL_ENV=production jekyll build
+
+
+
+<[1]> https://michaelsoolee.com/google-analytics-jekyll/
